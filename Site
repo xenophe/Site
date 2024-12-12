@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinéma en Ligne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .movie-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+        .movie-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎬 Cinéma en Ligne</h1>
+    </header>
+
+    <div class="container">
+        <div class="movies">
+            <div class="movie-card">
+                <img src="/api/placeholder/300/450" alt="Affiche de film 1">
+                <h2>Inception</h2>
+                <p>Un film de science-fiction réalisé par Christopher Nolan</p>
+            </div>
+            <div class="movie-card">
+                <img src="/api/placeholder/300/450" alt="Affiche de film 2">
+                <h2>Matrix</h2>
+                <p>Un film de science-fiction révolutionnaire</p>
+            </div>
+            <div class="movie-card">
+                <img src="/api/placeholder/300/450" alt="Affiche de film 3">
+                <h2>Interstellar</h2>
+                <p>Un voyage épique à travers l'espace et le temps</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Cinéma en Ligne - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
